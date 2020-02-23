@@ -1,0 +1,37 @@
+.clinical-cut-off-line {
+  fill: none;
+  stroke: #89868E;
+  stroke-dasharray: 8,8;
+  stroke-width: 2px;
+}
+.grid path {
+  stroke: none;
+}
+
+.grid line {
+  stroke: #E0E0E0;
+  shape-rendering: crispEdges;
+}
+
+
+.key-dot {
+    display: inline-block;
+    height: 10px;
+    margin-right: .5em;
+    width: 10px;
+}
+
+.target-cal { background:  #89868E;}
+.high { background: #FF5733;}
+.borderline{ background: #FFC300;}
+.low{ background: #FFC300;}
+.normal { background: #DAF7A6;}
+.danger {background: #000000;}
+
+#legend2{
+    overflow:hidden;
+}
+.legend2 {
+    float:left;
+    margin-right: 1em;
+}

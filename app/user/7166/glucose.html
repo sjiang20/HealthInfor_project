@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visualization</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="glucose.html">Glucose</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="steps.html">Steps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="calories.html">Calories</a>
+            </li>
+        </ul>
+
+    <h4 id="username"></h4>
+      <h2>Blood Glucose</h2>
+      <div id="legend2">
+	   <div class="legend2"> <p><span class="key-dot danger"></span><span id="l1">Dangerously high</span></p> </div>
+	   <div class="legend2"> <p><span class="key-dot high"></span><span id="l2">High</span></p> </div>
+	   <div class="legend2"> <p><span class="key-dot borderline"></span><span id="l3">Borderline</span></p> </div>
+	   <div class="legend2"> <p><span class="key-dot normal"></span>
+           <span id="l4">Normal</span>
+       </p> </div>
+       <div class="legend2"> <p><span class="key-dot low"></span>
+           <span id="l5">low</span>
+           </p>
+           </div>
+       <div class="legend2"> <p><span class="key-dot danger"></span>
+            <span id="l6">Dangerously low</span>
+            </p> </div>
+	</div>
+      <div id="viz"></div>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-2">
+                  <form>
+                      <div class="form-group">
+                          <label for="date-select" >Choose a day:</label>
+                          <select id="date-select" class="form-group form-control">
+                              <input name="updateButton" class="btn btn-primary"
+                              type="button"
+                              value="Update"
+                              onclick="updateData()"/>
+                          </select>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div><!-- container -->
+    <script src="/js/libraries/jquery/jquery.min.js"></script>
+    <script src="/js/libraries/bootstrap/bootstrap.min.js"></script>
+    <script src="/js/libraries/d3/d3.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="/js/glucose3.js"></script>
+  </body>
+</html>
